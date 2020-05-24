@@ -41,13 +41,73 @@ GENERAL
 
 body {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.hide {
+    display: none;
 }
 
 /**************
 IMAGE
 **************/
+.testimonial-image {
+    background-image: url(./images/pattern-bg.svg);
+    background-size: cover;
+    padding: 25px 35px;
+}
+
+.profile {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+} 
+
+/**************
+ARROWS
+**************/
+.arrows {
+    display: flex;
+    width: 80px;
+    box-shadow: 1px 1px 10px #8585ac;
+    position: relative;
+    top: -20px;
+    border-radius: 28px;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+button {
+    background-color: #ffffff;
+    border: none;
+}
+
+.left-button {
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+}
+
+.right-button {
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+
+
+
+
+
 
 /**************
 TEXT
@@ -79,6 +139,9 @@ MEDIA QUERIES
 **************/
 
 @media (min-width: 850px) {
+    .testimonial {
+        flex-direction: row;
+    }
     .quote {
         font-size: 32px;
         line-height: 44px;
