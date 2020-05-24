@@ -40,18 +40,21 @@ GENERAL
 }
 
 body {
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 25px;
+    padding-top: 25px;
 }
 
 .testimonial {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .hide {
@@ -65,6 +68,7 @@ IMAGE
     background-image: url(./images/pattern-bg.svg);
     background-size: cover;
     padding: 25px 35px;
+    margin-bottom: 35px;
 }
 
 .profile {
@@ -113,8 +117,17 @@ button {
 TEXT
 **************/
 
+.testimonial-text {
+    max-width: 610px;
+}
+
 .quote {
     font-weight: 500;
+    background-image: url(./images/pattern-quotes.svg);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    padding-top: 25px;
 }
 
 .reviewer {
@@ -131,7 +144,20 @@ TEXT
 FOOTER
 **************/
 
-.attribution { font-size: 11px; text-align: center; }
+footer {
+    height: 75px;
+    background-image: url(./images/pattern-curve.svg);
+    background-size: cover;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /**************
@@ -145,5 +171,9 @@ MEDIA QUERIES
     .quote {
         font-size: 32px;
         line-height: 44px;
+    }
+
+    footer {
+        height: 150px;
     }
 }
