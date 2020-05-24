@@ -29,5 +29,58 @@ The designs were created to the following widths:
 
 */
 
+
+/**************
+GENERAL
+**************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/**************
+IMAGE
+**************/
+
+/**************
+TEXT
+**************/
+
+.quote {
+    font-weight: 500;
+}
+
+.reviewer {
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+.reviewer strong {
+    font-weight: 700;
+}
+
+/**************
+FOOTER
+**************/
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/**************
+MEDIA QUERIES
+**************/
+
+@media (min-width: 850px) {
+    .quote {
+        font-size: 32px;
+        line-height: 44px;
+    }
+}
