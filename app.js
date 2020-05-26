@@ -7,6 +7,7 @@ function newSlide(e){
     
     testimonial.forEach((slide) => {
         slide.classList.toggle('hide');
+        slide.classList.toggle('show');
     });
     
 }
